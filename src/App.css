@@ -113,8 +113,9 @@ margin-left: 10px!important;
   color:rgb(7, 15, 56)!important ;
   font-weight: 600!important ;   
 }
-body{
-  background-image: url("https://cdn.pixabay.com/photo/2018/04/16/09/30/literature-3324023_640.jpg");
+.home-img img{
+  width: 100%;
+  
 }
 
 @media screen and (max-width:768px) {

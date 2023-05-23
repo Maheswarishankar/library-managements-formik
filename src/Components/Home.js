@@ -7,7 +7,7 @@ function Home() {
    <BaseApp
    title="Dashboard">
     <div className='home-img' >
-      {/* <img src='https://tse4.mm.bing.net/th?id=OIP.arPE8pCZkHCgWlq7AlYvvAHaEK&pid=Api&P=0&h=180'alt='img'></img>  */}
+      <img src='https://cdn.wallpapersafari.com/31/38/dNok7V.jpg'alt='img'></img> 
       
       
       
