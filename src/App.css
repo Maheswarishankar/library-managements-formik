@@ -1,38 +1,170 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(7, 15, 56);
+  color: rgb(119, 206, 238);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo{
+  font-size: 22px;
+  display: flex;
+  justify-content: center; 
+  padding-left: 3px;
+  padding-bottom: 8px; 
+  font-family:cursive;  
   }
+
+.logo img{
+  width: 60px;
+  height: 55px;
+  padding-right: 3px;
+}
+.nav-links{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;  
+  list-style: none;
+  text-decoration: none;
+  width: 70%;
+  
+}
+.title{
+  background-color: rgb(231, 168, 79); 
+  height: 55px;
+  text-align: center;
+  font-size: 27px;
+  font-family:cursive;
+  font-weight: 900;  
+ padding-top: 5px;
+  color:rgb(36, 9, 100);
+}
+.home,
+.moti,
+.ABJ,
+.Tamil,
+.English{
+  text-decoration: none;
+  color:rgb(119, 206, 238);
+  font-size: 20px;
+  font-family:cursive;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer{
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  height: 60px;
+  background-color: rgb(7, 15, 56);
+  color:rgb(119, 206, 238) ;
+  font-size: 15px;
+  text-align: center;
+  z-index: 1;
+}
+.mobile-menu-icon{
+  display: none;
+}
+.card-set{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+   
+}
+.img-set{
+  height: 350px;
+  padding: 20px;
+}
+
+.add-btn{
+margin-left: 10px!important;
+  margin-bottom: 20px!important;
+  color:rgb(119, 206, 238)!important;
+  background-color:rgb(7, 15, 56)!important ;
+}
+.text-areas{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 25px 10px;
+  padding: 10px;
+  gap: .5rem;
+}
+.add-submit{
+  width:8rem;
+  padding: 10px;
+  background-color:rgb(231, 168, 79)!important ;
+  color:rgb(7, 15, 56)!important ;
+  font-weight: 600!important ;   
+}
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2018/04/16/09/30/literature-3324023_640.jpg");
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:768px) {
+  .logo{
+    display: flex;
+    position: absolute;
+    top:10px;
+    left: 35px;
+
+  }
+  .nav-links{
+    display: none;
+    
+  }
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color:rgb(7, 15, 56);
+    left: 0;
+    top: 75px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+
+  }
+  .home,
+  .moti,
+  .ABJ,
+  .Tamil,
+  .English{
+    color:rgb(119, 206, 238);
+    text-align: center;
+    font-size: 25px;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;      
+
+  }
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    color:rgb(119, 206, 238);
+    background-color:rgb(7, 15, 56);
+    border: none;
+    outline: none;
+    top: 15px;
+    right: 25px;
+
+  }
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
